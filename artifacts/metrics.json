@@ -1,0 +1,66 @@
+{
+  "schema_version": "fraud-model-schema-1",
+  "model_version": "fraud-logreg-20260823T211935Z",
+  "algorithm": "LogisticRegression(class_weight='balanced')",
+  "trained_at": "2026-08-23T21:19:35.978381+00:00",
+  "review_threshold": 0.8225213740481299,
+  "threshold_strategy": "validation_score_quantile",
+  "target_validation_review_rate": 0.05,
+  "dataset_sha256": "ee2cd30d2eacac7066532af4c82c086be5c645fbb71d9b1ae1aeaa1b05f721fd",
+  "feature_columns": [
+    "amount",
+    "currency",
+    "merchant_category",
+    "home_country",
+    "country",
+    "channel",
+    "account_age_days",
+    "avg_amount_30d",
+    "tx_count_10m",
+    "tx_count_24h",
+    "minutes_since_last_tx",
+    "distance_from_home_km",
+    "distance_from_last_tx_km",
+    "device_age_days",
+    "device_trust_score",
+    "merchant_chargeback_rate",
+    "failed_auth_attempts_10m"
+  ],
+  "training_rows": 35000,
+  "validation_rows": 7500,
+  "test_rows": 7500,
+  "positive_rate_train": 0.016457142857142858,
+  "positive_rate_validation": 0.017333333333333333,
+  "positive_rate_test": 0.0172,
+  "scikit_learn_version": "1.8.0",
+  "validation_metrics": {
+    "base_rate": 0.017333333333333333,
+    "average_precision": 0.1222112595665979,
+    "roc_auc": 0.8300657551403822,
+    "precision_at_threshold": 0.14133333333333334,
+    "recall_at_threshold": 0.4076923076923077,
+    "f1_at_threshold": 0.2099009900990099,
+    "review_rate": 0.05,
+    "confusion_matrix": {
+      "true_negative": 7048,
+      "false_positive": 322,
+      "false_negative": 77,
+      "true_positive": 53
+    }
+  },
+  "metrics": {
+    "base_rate": 0.0172,
+    "average_precision": 0.15711415558193872,
+    "roc_auc": 0.8314450407473664,
+    "precision_at_threshold": 0.13742690058479531,
+    "recall_at_threshold": 0.3643410852713178,
+    "f1_at_threshold": 0.19957537154989385,
+    "review_rate": 0.0456,
+    "confusion_matrix": {
+      "true_negative": 7076,
+      "false_positive": 295,
+      "false_negative": 82,
+      "true_positive": 47
+    }
+  }
+}
