@@ -355,29 +355,6 @@ A real financial decision system needs substantially more than this tutorial, in
 
 Read [SECURITY.md](SECURITY.md) before adapting the project.
 
-## Publish to GitHub
-
-The downloadable package is already configured for:
-
-```text
-https://github.com/sergiofigueras/hybrid-fraud-engine
-```
-
-Follow [PUBLISH_TO_GITHUB.md](PUBLISH_TO_GITHUB.md), or create an empty GitHub repository and run:
-
-```bash
-./scripts/publish_to_github.sh \
-  https://github.com/sergiofigueras/hybrid-fraud-engine.git
-```
-
-Windows PowerShell:
-
-```powershell
-.\scripts\publish_to_github.ps1 `
-  -RepositoryUrl "https://github.com/sergiofigueras/hybrid-fraud-engine.git"
-```
-
-The scripts initialize Git, create the first commit, configure `origin`, and push to `main`. They do not force-push.
 
 ## Contributing and license
 
