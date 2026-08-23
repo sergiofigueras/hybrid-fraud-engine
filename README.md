@@ -5,6 +5,8 @@
 [![FastAPI](https://img.shields.io/badge/API-FastAPI-009688.svg)](https://fastapi.tiangolo.com/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
+Owner: sergio@yourecm.com
+
 A complete, clone-and-run educational project that combines **authoritative deterministic rules** with a **supervised Machine Learning model** to evaluate financial transaction risk.
 
 The repository is part of the **AI Crash Course** hands-on series. It demonstrates how deterministic software, classical Machine Learning, feature engineering, API design, automated testing, auditability, and human review fit together in one system.
